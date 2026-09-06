@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+ ورود / ثبت نام
+</button> -->
+
+<!-- Modal -->
+<!-- <div class="modal fade title" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"> -->
+  <!-- <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel"> فرم ثبت نام</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="#">
+        <fieldset>
+            <legend><label for="name">اطلاعات شخصی</label></legend>
+            <div>
+                <div class="div1">
+                <label class="labeli" for="name">نام</label><label for="name"> ↓ </label>
+                <input type="text" class="inputi" id="name" placeholder="مثال: مبین">
+                </div>
+                <div class="div2">
+                <label class="labeli" for="namkhanevadegi">نام خانوادگی</label><label for="namkhanevadegi"> ↓ </label>
+                <input type="text" class="inputi" id="namkhanevadegi" placeholder="مثال: جوان بخت">
+                </div>
+                <div class="div3">
+                <label class="labeli" for="hamrah">شماره همراه</label><label for="hamrah"> ↓ </label>
+                <input type="tel" class="inputi" id="hamrah" placeholder="مثال:09151234567">
+                </div>
+            </div>
+                <label class="labeli" for="JENSIYAT">جنسیت:</label><br><label for="JENSIYAT"> با زدن روی هر گزینه جنسیتتان را انتخاب کنید.↓ </label>
+            <ol id="JENSIYAT">
+                <label for="zan"><li><input name="jens" type="radio" id="zan"><label for="zan">زن</label></li></label>
+                <label for="mard"><li><input name="jens" type="radio" id="mard"><label for="mard">مرد</label></li></label>
+                <label for="dighar"><li><input name="jens" type="radio" id="dighar"><label for="dighar">دیگر</label></li></label>
+            </ol>
+            <label class="labeli" for="nameshahr">نام شهر</label><label for="nameshahr"> --> </label>
+            <!-- <select id="nameshahr">
+                <option selected><شهر خود را انتخاب نمایید></option>
+                <option >مشهد</option>
+                <option >تهران</option>
+                <option >شیراز</option>
+                <option >کرمان</option>
+                <option >اهواز</option>
+                <option >بوشهر</option>
+                <option >چابهار</option>
+                <option >اصفهان</option>
+                <option >سامال</option>
+                <option >چهارمهال بختیاری</option>
+            </select><br><br>
+            <label for="ghavanin">قوانین را
+                میپذیرم</label>
+            <input type="checkbox" id="ghavanin"><br><br>
+            <button id="button1" type="reset"><a href="../SITE_HTML.html">لغو</a></button>
+            <button id="button2" type="button">ثبت نام</button>
+        </fieldset>
+
+    </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+        <button type="button" class="btn btn-primary">ثبت نام</button>
+      </div>
+    </div> -->
+  <!-- </div> --> 
+<!-- </div>
+
+<div class="box">متن تستی</div> -->
+
+
+<!-- <script src="js/bootstrap.min.js"></script>     -->
+<style>
+  .container_{
+    display: grid;
+    grid-template-areas: 
+    "h h h h"
+    "b1 b2 b3 b3"
+    ;
+    gap: 5px;
+    height: 300px;
+  }
+.item1_{
+  grid-area: h;
+}
+.item2_{
+  grid-area: b1;
+
+}
+.item3_{
+  grid-area: b2;
+
+}
+.item4_{
+  grid-area: b3;
+
+}
+.item{
+  border: 1px solid red;
+}
+@media screen and (max-width: 425px){
+  .item1_{
+    display: none;
+  }
+  .container_{
+    grid-template-areas: 
+    "b1"
+    "b2"
+    "b3"
+    ;
+  }
+}
+.box{
+  background-color: aqua;
+  width: 100px;
+  height: 50px;
+  /* transform: skew(10deg,5deg) */
+  overflow:scroll;
+}
+.a{
+  width: 130px;
+  background-color: blueviolet;
+}
+.anime{
+  background-color: blue;
+  height: 20px;
+  width: 10px;
+  margin-left: 20px;
+  animation-name: x;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  /* animation-iteration-count: infinite;  */
+  animation-delay: 2s;
+  
+}
+button span{
+  background-color: rgba(255, 238, 0, 0.753);
+  border-radius: 50%;
+  position: absolute;
+  top: 100px;
+
+}
+
+@keyframes x {
+  form {width: 10px;}
+  to {width: 150px;}
+}
+</style>
+
+<div class="container_   container-fluid">
+  <div class="item1_ item">
+    
+    <div class="box">
+      <div class="a">salam</div>
+    </div>
+  </div>
+  <div class="item2_ item">
+    <button class="btn btn-outline-primary ">ثبت نام</button>
+  </div>
+  <div class="item3_ item">box</div>
+  <div class="item4_ item">
+  <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/1.webp" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/2.webp" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/1.webp" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+  </div>
+  <!-- <div>box</div>
+  <div>box</div>
+  <div>box</div> -->
+
+
+  <div class="anime"></div>
+
+</div>
+<!-- <script src="js/script.js"></script> -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

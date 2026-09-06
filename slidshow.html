@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="CSS/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+    /* div{
+        width: 200px;
+        height: 150px;
+        background-color: aliceblue;
+    }
+    div:hover{
+        background-color: aqua;
+    } */
+     .item{
+        background-color: brown;
+     }
+
+     /* .item:hover{
+        background-color: aqua;
+        font-size: larger;
+     } */
+      .anime{
+        border: 5px solid red;
+        border-top: 0px;
+        width: 50px;
+        height: 50px;
+        margin: 20px;
+        border-radius: 50%;
+        animation: loading ;
+        animation-duration:2s;
+        animation-iteration-count: 5;
+        animation-timing-function:linear;
+        an
+      }
+      @keyframes loading {
+        from{
+            transform: rotate(0deg);
+
+        }
+        to{
+            transform: rotate(360deg);
+        }
+      }
+</style>
+
+<body>
+    <!-- <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/1.webp" class="d-block w-100" alt="عکس اسلاید اول">
+            </div>
+            <div class="carousel-item">
+                <img src="images/2.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/1.webp" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div> -->
+
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+
+    <!-- <ul>
+        <li class="item">داشبورد</li>
+        <li class="item">داشبورد</li>
+        <li class="item">داشبورد</li>
+        <li class="item">داشبورد</li>
+    </ul> -->
+
+    <div class="anime"></div>
+</body>
+
+</html>

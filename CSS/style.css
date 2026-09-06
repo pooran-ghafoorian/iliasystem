@@ -1,0 +1,242 @@
+svg,
+i {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    color: white
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    font-size: small;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    
+}
+
+li:hover {
+    position: relative;
+    font-size: medium;
+    box-shadow: 0 10px 40px rgba(255, 253, 253, 0.35), inset 0 1px 1px rgba(255, 255, 255, .3);
+    transition:100ms;
+    backdrop-filter: blur(22px) saturate(180%);
+    border: 1px;
+    padding: 15px;
+    margin: 5px;
+}
+
+ul {
+    color: white;
+    padding: 10px;
+}
+
+.div {
+    width: 23%;
+    background-color: #042e56a8;
+    border-radius: 10px;
+    height: 1000px;
+}
+
+img {
+    border-radius: 100%;
+    display: inline-block;
+}
+
+@font-face {
+    font-family: yas;
+    src: url(../Vazir.ttf);
+}
+body {
+    font-family: yas;
+    background-color: rgb(214, 254, 246);
+    position: relative;
+}
+
+.div2b {
+    left: 100px;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.a2 {
+    text-decoration: none;
+}
+
+.divB {
+    display: flex;
+}
+
+.div2s {
+    margin: 20px;
+}
+
+article {
+    display: grid;
+    grid-template-areas:
+        "i1 i2 i3"
+        "i4 i5 i5"
+    ;
+    gap: 30px;
+    position: relative;
+}
+
+.item1 {
+    grid-area: i1;
+}
+
+.item2 {
+    grid-area: i2;
+}
+
+.item3 {
+    grid-area: i3;
+}
+
+.item4 {
+    grid-area: i4;
+}
+
+.item5 {
+    grid-area: i5;
+}
+.itemes {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 1px 5px 10px rgb(211, 210, 210);
+    
+}
+.itemes:hover{
+    transition: 100ms;
+    margin-block: 10px;
+    box-shadow:  0 10px 40px rgba(100, 94, 94, 0.35), inset 0 1px 1px rgba(103, 96, 96, 0.3) ;
+    backdrop-filter: blur(22px) saturate(180%);
+    background-color: rgb(218, 208, 208);
+    position: absolute;
+}
+.itemes:hover .S2{
+    position: relative;
+    transition: 100ms;
+    box-shadow:  0 10px 40px rgba(254, 252, 252, 0.791), inset 0 1px 1px rgba(245, 242, 242, 0.753) ;
+    backdrop-filter: blur(22px) saturate(180%);
+    border-radius: 50px;
+    padding: 20pxpx;
+    margin-top:30px ;
+    font-size: x-large;
+    color: red;
+    
+}
+.S1,
+.S2 {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.S2 {
+    font-weight: bolder;
+}
+
+.S1 {
+    font-size: small;
+    font-weight: 500;
+}
+
+.SVGdiv {
+    padding: 10px 100px;
+    background-color: rgb(99, 186, 215);
+    border-radius: 15px;
+    box-shadow:  0 10px 40px rgba(100, 94, 94, 0.35), inset 0 1px 1px rgba(103, 96, 96, 0.3);
+}
+
+.SD2 {
+    background-color: rgb(255, 187, 0);
+}
+
+.SVG {
+    width: 40px;
+    height: 40px;
+}
+
+header {
+    margin: 10px;
+    display: flex;
+}
+
+.SD4 {
+    background-color: rgb(101, 208, 101);
+}
+
+.SD5 {
+    padding: 10px 250px;
+    background-color: rgb(53, 150, 186);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.DIV {
+    margin: 20px;
+    position: relative;
+}
+
+.B {
+    border-radius: 3px;
+    border: none;
+    padding: 15px;
+    display: flex;
+    justify-content: right;
+    font-size: small;
+    font-family: inherit;
+    color: white;
+    margin: 3px;
+}
+
+.b1 {
+    background-color: rgb(26, 197, 26);
+}
+
+.b2 {
+    background-color: red;
+}
+body:hover .itemes{
+    transition: 100ms;
+}
+body:hover .S2{
+    transition: 100ms;
+}
+body:hover li{
+    transition: 100ms;
+}
+@media (max-width: 768px){
+    body{
+        background-color: blue !important;
+    }  
+}
+.title{
+    background-color: aqua;
+}
+
+.box{
+    background-color: blue;
+    width: 80px;
+    height: 50px;
+      /* transition: width 3s ; */
+      margin: 20px;
+    /* transform: rotate(45deg); */
+    /* transform: skew(20deg,10deg); */
+    /* transform: scale(1.5,1.5); */
+    /* transform: translate(200px,10px); */
+
+}
+/* .box:hvover{
+    width: 300px;
+} */
