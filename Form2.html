@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>فرم ثبت نام</title>
+</head>
+
+<body dir="rtl">
+    <form action="#">
+        <fieldset>
+            <legend><label for="name">اطلاعات شخصی</label></legend>
+            <div>
+                <div class="div1">
+                    <label class="labeli" for="name">نام</label><label for="name"> ↓ </label>
+                    <input type="text" class="inputi" id="name" placeholder="مثال: مبین">
+                </div>
+                <div class="div2">
+                <div class="div2">
+                    <label class="labeli" for="namkhanevadegi">نام خانوادگی</label><label for="namkhanevadegi"> ↓
+                    </label>
+                    <input type="text" class="inputi" id="namkhanevadegi" placeholder="مثال: جوان بخت">
+                </div>
+                <div class="div3">
+                    <label class="labeli" for="namkhanevadegi">جنسیت </label><label for="namkhanevadegi"> ↓
+                    </label>
+                    زن<input type="radio" name="inputi" id="women" >
+                    مرد<input type="radio" name="inputi" id="men" >
+                </div>
+                <div class="">
+                    <input type="checkbox" name="inputi" id="rule" >
+                    <label class="labeli" for="namkhanevadegi">قوانین را می پذیرم </label><label for="namkhanevadegi"> ↓
+                    </label>
+                    <div>
+                        <label>شهر</label>
+                        <select name="" id="city">
+                            <option>مشهد</option>
+                            <option>تهران</option>
+                            <option>اصفهان</option>
+                        </select>
+                    </div>
+                 
+                </div>
+
+                <button id="button2" type="button" onclick="getValue()">ثبت نام</button>
+        </fieldset>
+
+    </form>
+    <script>
+        function getValue() {
+            var name = document.getElementById("name").value;
+            var last_name = document.getElementById("namkhanevadegi").value;
+            var rule = document.getElementById("rule").checked;
+            var men = document.getElementById("men").checked;
+            var city = document.getElementById("city").selected;
+            console.log(name, last_name,rule,men,city);
+        }
+
+    </script>
+</body>
+
+</html>

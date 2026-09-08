@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="CSS/style.css">
+</head>
+<style>
+   .item {
+      border: 1px solid green;
+   }
+
+   .item1 {
+      background-image: url(images/download.jfif);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 20px;
+   }
+
+   .container {
+      display: grid;
+      /* grid-template-columns:repeat(3,1fr) ; */
+      grid-template-columns: 25% 24% 49%;
+      /* grid-template-rows: ; */
+      /* grid-template-areas: 
+    "header header header"
+    "section section section"
+    "box1 box2 box3"
+    "box4 box5 box5"
+    "footer footer footer"
+    ; */
+      gap: 5px;
+      height: 500px;
+      border: 1px solid red;
+   }
+
+   .item1 {
+      /* grid-column: span 3; */
+      /* grid-area:header ; */
+      /* grid-column: span 3; */
+      /* grid-column-end: line3;
+    grid-row-start: line1;
+    grid-row-end: line2; */
+   }
+
+   .item2 {
+      /* grid-column: span 2;
+   grid-column: (2); */
+
+   }
+
+   .item6 {
+      /* grid-column: span 2; */
+   }
+
+   .item5 {
+      /* grid-column-start: 2;
+   grid-column-end: 4; */
+   }
+
+   .container {
+      background-color: blue;
+   }
+
+   @media screen and (max-width : 425px) {
+      .container {
+         background-color: red;
+      }
+   }
+
+   /* .item2{
+    grid-area:section ;
+ }
+ .item3{
+    grid-area:box1 ;
+ }
+ .item4{
+    grid-area:box2 ;
+ }
+ .item5{
+    grid-area:box3 ;
+ }
+ .item6{
+    grid-area: box4;
+ }
+ .item7{
+    grid-area:box5 ;
+ }
+ .item8{
+    grid-area:footer ;
+ } */
+   .box11 {
+      width: 150px;
+      height: 150px;
+      background-color: rgb(0, 0, 0);
+      transition: transform 1s;
+      opacity: 0.5;
+   }
+
+   .box11:hover {
+      /* transition: position 5s;
+   top:10px */
+      transform: translateY(-10px);
+   }
+</style>
+
+<body>
+   <button class="btn" onclick="a()">ورود و ثبت نام </button>
+   <div id="box">test</div>
+   <div class="box11">ssss</div>
+
+   <script src="js/script.js"></script>
+
+</body>
+
+</html>
